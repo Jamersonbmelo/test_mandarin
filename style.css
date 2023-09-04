@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+main{
+    padding: 0px 100px;
+}
+
+.font{
+    color: #c4c4c4;
+    font-style: italic;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner {
+    display: flex;
+    text-align: center;
+    margin: -20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    width: 100%;
+    /* max-width: 530px; */
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.imagem-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.imagem-item {
+    max-width: 250px;
+    text-align: start;
+    width: 45%;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+.imagem-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer span{
+    color: #b4b4b4;
+    text-align: center;
+    margin: 0 40px;
+}
+footer span a{
+    color: #b4b4b4;
+}
+
+.degrade-blue{
+    margin-top: 6px;
+    width: 100px;
+    height: 2px;
+    background: rgb(2,0,36);
+    background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(36,175,239,1) 88%, rgba(0,212,255,1) 100%);
+}
+.degrade-purple{
+    margin-top: 6px;
+    width: 100px;
+    height: 2px;
+    background: rgb(2,0,36);
+    background: linear-gradient(241deg, rgba(2,0,36,1) 7%, rgba(252,70,107,1) 46%);
+}
+
+@media (max-width: 768px) {
+    .imagem-section {
+        padding: auto;
+        justify-content: center;
+    }
+    .imagem-item{
+        width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    .banner{
+        padding: auto;
+    }
+    .imagem-item{
+        font-size: 14px;
+    }
+    .font {
+        font-size: 12px;
+    }
+    footer span {
+        margin: 0;
+        text-align: start;
+        padding: 0 20px;
+        font-size: 12px;
+    }
+}
